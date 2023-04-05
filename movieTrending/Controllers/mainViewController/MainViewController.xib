@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,28 +10,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="movieTrending" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="JrX-Fn-aEC" id="pD0-vM-Zy1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvN-7h-Ivv">
-                    <rect key="frame" x="152.66666666666666" y="415.66666666666669" width="88" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JrX-Fn-aEC">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="TvN-7h-Ivv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fJg-9c-BaY"/>
-                <constraint firstItem="TvN-7h-Ivv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pou-Tl-SfJ"/>
+                <constraint firstItem="JrX-Fn-aEC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4ny-zR-GS0"/>
+                <constraint firstItem="JrX-Fn-aEC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H9u-bt-FAT"/>
+                <constraint firstAttribute="trailing" secondItem="JrX-Fn-aEC" secondAttribute="trailing" id="YHA-oQ-G9j"/>
+                <constraint firstAttribute="bottom" secondItem="JrX-Fn-aEC" secondAttribute="bottom" id="u3s-6h-acJ"/>
             </constraints>
-            <point key="canvasLocation" x="138" y="20"/>
+            <point key="canvasLocation" x="137.68115942028987" y="19.419642857142858"/>
         </view>
     </objects>
     <resources>

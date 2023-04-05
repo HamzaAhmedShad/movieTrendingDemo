@@ -15,6 +15,8 @@
 		357E017529DBEDAF00056B42 /* movieTrendingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E017429DBEDAF00056B42 /* movieTrendingUITestsLaunchTests.swift */; };
 		357E018429DBFB9F00056B42 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E018229DBFB9F00056B42 /* MainViewController.swift */; };
 		357E018529DBFB9F00056B42 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357E018329DBFB9F00056B42 /* MainViewController.xib */; };
+		357E018F29DC1C7400056B42 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E018E29DC1C7400056B42 /* MainViewController+TableView.swift */; };
+		357E019129DC270000056B42 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E019029DC270000056B42 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		357E017429DBEDAF00056B42 /* movieTrendingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieTrendingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		357E018229DBFB9F00056B42 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		357E018329DBFB9F00056B42 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		357E018E29DC1C7400056B42 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		357E019029DC270000056B42 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			children = (
 				357E018229DBFB9F00056B42 /* MainViewController.swift */,
 				357E018329DBFB9F00056B42 /* MainViewController.xib */,
+				357E018E29DC1C7400056B42 /* MainViewController+TableView.swift */,
 			);
 			path = mainViewController;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 		357E018729DC0AD800056B42 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				357E019029DC270000056B42 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -328,7 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				357E015229DBEDAE00056B42 /* AppDelegate.swift in Sources */,
+				357E018F29DC1C7400056B42 /* MainViewController+TableView.swift in Sources */,
 				357E018429DBFB9F00056B42 /* MainViewController.swift in Sources */,
+				357E019129DC270000056B42 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
