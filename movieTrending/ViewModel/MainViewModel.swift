@@ -12,7 +12,7 @@ class MainViewModel {
         1
     }
     func numberOfRows(in section:Int) -> Int {
-        100
+        10
     }
     
     
