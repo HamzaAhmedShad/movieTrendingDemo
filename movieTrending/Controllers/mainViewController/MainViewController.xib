@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,32 +10,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="movieTrending" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="JrX-Fn-aEC" id="pD0-vM-Zy1"/>
+                <outlet property="activityIndicator" destination="nS2-Py-GXT" id="Jj0-d3-xlK"/>
+                <outlet property="tableView" destination="Mkp-am-2GN" id="RC0-bh-MFw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JrX-Fn-aEC">
-                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mkp-am-2GN">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nS2-Py-GXT">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="labelColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="JrX-Fn-aEC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4ny-zR-GS0"/>
-                <constraint firstItem="JrX-Fn-aEC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H9u-bt-FAT"/>
-                <constraint firstAttribute="trailing" secondItem="JrX-Fn-aEC" secondAttribute="trailing" id="YHA-oQ-G9j"/>
-                <constraint firstAttribute="bottom" secondItem="JrX-Fn-aEC" secondAttribute="bottom" id="u3s-6h-acJ"/>
+                <constraint firstItem="nS2-Py-GXT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g12-Y6-BFb"/>
+                <constraint firstItem="nS2-Py-GXT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lzn-3W-DZY"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="19.419642857142858"/>
+            <point key="canvasLocation" x="70.992366412213741" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

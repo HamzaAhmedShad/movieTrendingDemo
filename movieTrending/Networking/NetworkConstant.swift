@@ -6,23 +6,29 @@
 //
 
 import Foundation
-class NetworkConstant{
-    public static var shared: NetworkConstant = NetworkConstant()
+
+class NetworkConstant {
+    
+    public static var shared : NetworkConstant = NetworkConstant()
+    
     private init(){
-//        singleton pattern
+        //singleton
     }
+    
     public var apiKey: String {
-        get{
-            return "a4389099c63f52cede3a1957257dbfcf"
+        get {                //api key from themoviedb.org
+            return "110ef0e042852cde9a3753a6b583baaa"
         }
     }
-    public var serverAddress: String{
-        get{
+    
+    public var serverAddress: String {
+        get {
             return "https://api.themoviedb.org/3/"
         }
     }
-    public var imageServerAddress: String{
-        get{
+    
+    public var imageServerAddress: String {
+        get {
             return "https://image.tmdb.org/t/p/w500/"
         }
     }

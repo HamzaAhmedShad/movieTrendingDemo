@@ -2,7 +2,7 @@
 //  movieTrendingUITests.swift
 //  movieTrendingUITests
 //
-//  Created by BS1101 on 4/4/23.
+//  Created by BS1101 on 5/4/23.
 //
 
 import XCTest
